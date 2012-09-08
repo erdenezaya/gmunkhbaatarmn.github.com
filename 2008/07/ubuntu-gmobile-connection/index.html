@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ubuntu дээр GMobile-н интэрнэтэд холбогдох ·  Хөгжүүлэгчийн тэмдэглэл</title>
+	<link href="/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="/css/master-icons.css" type="text/css" rel="stylesheet" media="screen">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+	<script>
+		if (window.location.hostname == 'localhost') {
+			var disqus_developer = 1;
+			var disqus_url = 'http://itblog.gmb.mn' + window.location.pathname;
+		}
+		var disqus_shortname = 'itblog-gmb-mn';
+
+		$(function() {
+			// disqus comment counts
+			(function() {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<header>
+		<h1><a href="/">Програмчны тэмдэглэл</a></h1>
+		</header>
+	</div>
+
+	<div id="container">
+		<div id="content"><div class="post">
+	<article>
+	<h1><a href="/2008/07/ubuntu-gmobile-connection/">Ubuntu дээр GMobile-н интэрнэтэд холбогдох</a></h1>
+	<ul class="meta">
+		<li class="date">July 19, 2008</li>
+		<li class="author">by <a href="/contact/">Munkhbaatar</a></li>
+		<li class="category">category: <a href="//"></a></li>
+		<li class="tags">tags: gmobile, ubuntu, linux, mobile-connection</li>
+		<li class="comments"><a href="/2008/07/ubuntu-gmobile-connection/#disqus_thread">loading ...</a></li>
+	</ul>
+
+	<div class="post-content"><p>GMobile-н интэрнэт хэрэглэдэг юм л даа. Windows дээр бол бараг л асуудалгүй
+нэт-д холбогдчихоод байгаа юм. Харин Ubuntu болон linux дээр тохируулж чадахгүй
+байгаа хүмүүс бас байж магадгүй гээд оруулчихлаа. GMobile-ийн acces-box нь
+dial-up, wireless, modem, usb-modem энэ тэрийн аль нь юм бүү мэд. Аль алинаар нь
+оролдоод болохгүй байсан юм.</p>
+
+<p>Ubuntu дээр интэрнэтэд холбогдох гээд чадахгүй болохоор нь санаа алдаад л эргээд
+Windows-оороо нэлээн удаан явлаа. Тэгээд нэг өдөр зориг ороод яадаг ч байсан
+өнөөдөр заавал УБУНТУгаасаа интэрнэтэд холбогдоно гээд үзэж нэлээн ноцолдсондоо.
+Өглөөнөөс аваад интэрнэт ухаж ухаж үдэш болохын алдад нэг юм болов оо хө. Бөөн
+баяр. Тэгээд л эргэлт буцалтгүй linux-чин болж байгаа юм даа. Нэг буянтай
+пакистан нөхөр яаж холбогдсоноо бичсэн байсныг нь Монголчлох товчлохын голоор
+хүргэе.</p>
+
+<pre><code>$ lsusb
+========================================
+Bus 005 Device 001: ID 0000:0000
+Bus 003 Device 001: ID 0000:0000
+Bus 004 Device 001: ID 0000:0000
+Bus 002 Device 004: ID 05c6:3197 Qualcomm, Inc. CDMA Wireless Modem/Phone
+Bus 002 Device 001: ID 0000:0000
+Bus 002 Device 001: ID 0000:0000
+Bus 001 Device 001: ID 0000:0000
+========================================
+</code></pre>
+
+<p>Нэг иймэрхүү юм гарч ирнэ. Өөр ямар нэгэн юм USB-гээр холбосон бол өөр зүйл гарч
+ирнэ. Тэр нь гэхдээ хамаагүй.</p>
+
+<pre><code>$ sudo modprobe usbserial vendor=0x05c6 product=0x3197
+</code></pre>
+
+<p>Энд арын тэр үсэг тоонууд "Bus 002 Device 004: ID 05c6:3197 Qualcomm, Inc. CDMA
+Wireless Modem/Phone" байгаатай адилхан байх ёстой. Компьютэрээсээ хамаараад өөр
+өөр байна.</p>
+
+<pre><code>$ dmesg
+</code></pre>
+
+<p>Энэ хэсэг байхгүй байсан ч болох юм шиг байна лээ. Гэхдээ юмыг яаж мэдэх бичиж
+уншуулаад модемтойгоо холбогдсон эсэхээ шалгачих.</p>
+
+<pre><code>$ sudo apt-get install wvdial
+</code></pre>
+
+<p>Энэ нь wdvial гэсэн програмыг суулгаж байгаа гэсэн үг нь ойлгомжтой. Энэ
+коммандыг ажиллуулангуут sudo password гэж асууна. Энэ нь super user-ын буюу
+root-ын нууц үгийг асууж байгаа юм.</p>
+
+<pre><code>$ sudo wvdialconf /etc/wvdial.conf
+========================================
+Scanning your serial ports for a modem.
+
+Modem Port Scan&amp;lt;*1&amp;gt;: S0 S1 S2 S3
+WvModem&amp;lt;*1&amp;gt;: Cannot get information for serial port.
+========================================
+</code></pre>
+
+<p>Гэсэн эхлэлтэй бичигнүүд байх ба сүүлчээсээ өмнөх мөрөнд:</p>
+
+<pre><code>========================================
+Modem configuration written to /etc/wvdial.conf.
+========================================
+</code></pre>
+
+<p>гэж байвал комманд амжилттай биелэгдсэн гэсэн үг.</p>
+
+<pre><code>$ sudo gedit /etc/wvdial.conf
+</code></pre>
+
+<p>Текст засварлагчаар засвар хийнэ гэсэн үг.</p>
+
+<pre><code>========================================
+[Dialer Defaults]
+Init1 = ATZ
+Init2 = ATQ0 V1 E1 S0=0 &amp;amp;amp;C1 &amp;amp;amp;D2 +FCLASS=0
+Stupid Mode = yes
+ISDN = 0
+Modem Type = USB Modem
+New PPPD = yes
+Phone = #777
+Modem = цаанаасаа тохируулагдчихсан байна. өөрчлөх хэрэггүй.
+Username = таны хэрэглэгчийн нэр
+Password = таны нууц үг
+Baud = 460800
+========================================
+</code></pre>
+
+<p><code>Stupid Mode = yes</code> гэсэн мөр зарим тохиолдолд байхгүй байж магадгүй. Минийх
+дээр лав байгаагүй. Үүнийг copy-paste хийгээд нэмчихээрэй.</p>
+
+<pre><code>$ sudo wvdial
+</code></pre>
+
+<p>Энэ коммандаар интэрнэтэд холбогдож байх болно. Terminal дээр</p>
+
+<pre><code>========================================
+WvDial&lt;*1&gt;: WvDial: Internet dialer version 1.56
+WvModem&lt;*1&gt;: Cannot get information for serial port.
+WvDial&lt;*1&gt;: Initializing modem.
+WvDial&lt;*1&gt;: Sending: ATZ
+WvDial Modem&lt;*1&gt;: ATZ
+WvDial Modem&lt;*1&gt;: OK
+WvDial&lt;*1&gt;: Sending: ATQ0 V1 E1 S0=0 &amp;amp;C1 &amp;amp;CD2 +FCLASS=0
+WvDial Modem&lt;*1&gt;: ATQ0 V1 E1 S0=0 &amp;amp;CC1 &amp;amp;CD2 +FCLASS=0
+WvDial Modem&lt;*1&gt;: OK
+WvDial&lt;*1&gt;: Modem initialized.
+WvDial&lt;*1&gt;: Sending: ATDT#777
+WvDial&lt;*1&gt;: Waiting for carrier.
+WvDial Modem&lt;*1&gt;: ATDT#777
+WvDial Modem&lt;*1&gt;: CONNECT
+WvDial&lt;*1&gt;: Carrier detected. Starting PPP immediately.
+WvDial&lt;notice&gt;: Starting pppd at Sun Feb 10 22:18:34 2008
+WvDial&lt;notice&gt;: Pid of pppd: 7410
+WvDial&lt;*1&gt;: Using interface ppp0
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+WvDial&lt;*1&gt;: local IP address **.**.**.**
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+WvDial&lt;*1&gt;: remote IP address **.**.**.**
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+WvDial&lt;*1&gt;: primary DNS address ***.***.***.***
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+WvDial&lt;*1&gt;: secondary DNS address ***.***.***.***
+WvDial&lt;*1&gt;: pppd: P?[06][08]??[06][08]
+========================================
+</code></pre>
+
+<p>гэсэн бичигнүүд гарч ирж байвал okay гэсэн үг. Ip болоод сүүийн хэдэн мөрөн дэхь
+текстүүд зөрж болно. Ингээд интэрнэтэд холбогдчихсон гэсэн үг. Энэ терминал-аа
+хаавал интэрнэт салгагдана гэсэн үг.</p>
+
+<p>Дараа интернэтэд холбогдохдоо <code>$ sudo wvdial</code> гэсэн хамгийн сүүлийн коммандыг тэрминал дээр бичихэд л болно.</p>
+</div>
+
+	<div id="disqus_thread"></div>
+	<script>
+		// disqus comments
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</article>
+</div>
+</div>
+		<div id="sidebar"><div class="box">
+	<ul>
+		<li><a href="/rss/"><i class="icon-rss-alt"></i> Subscribe <strong>Posts RSS</strong></a></li>
+		<li><a href="http://twitter.com/gmunkhbaatarmn"><i class="icon-twitter-bird"></i> Follow me on <strong>Twitter</strong></a></li>
+		<li><a href="http://github.com/gmunkhbaatarmn"><i class="icon-github-text"> </i> Fork me on <strong>Github</strong></a></li>
+		<li><a href="http://www.linkedin.com/in/gmunkhbaatarmn"><i class="icon-linkedin-rect"></i> Connect me on <strong>LinkedIn</strong></a></li>
+	</ul>
+</div>
+
+
+
+<div class="box">
+	<h3 class="dsq-widget-title">Сүүлийн сэтгэгдлүүд</h3>
+	<script type="text/javascript" src="http://itblog-gmb-mn.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=50"></script>
+</div>
+
+
+</div>
+		<div id="fixer"></div>
+	</div>
+
+	<div id="footer"><div class="container">
+			<footer>
+			<p>
+			&copy; Copyright 2012 <a href="/">gmunkhbaatarmn</a>
+			&middot;
+			Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+			</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

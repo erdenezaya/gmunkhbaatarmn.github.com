@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dvorak гарын байрлалд Vim засварлагчийг нийцүүлсэн нь ·  Хөгжүүлэгчийн тэмдэглэл</title>
+	<link href="/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="/css/master-icons.css" type="text/css" rel="stylesheet" media="screen">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+	<script>
+		if (window.location.hostname == 'localhost') {
+			var disqus_developer = 1;
+			var disqus_url = 'http://itblog.gmb.mn' + window.location.pathname;
+		}
+		var disqus_shortname = 'itblog-gmb-mn';
+
+		$(function() {
+			// disqus comment counts
+			(function() {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<header>
+		<h1><a href="/">Програмчны тэмдэглэл</a></h1>
+		</header>
+	</div>
+
+	<div id="container">
+		<div id="content"><div class="post">
+	<article>
+	<h1><a href="/2010/10/dvorak-and-vim/">Dvorak гарын байрлалд Vim засварлагчийг нийцүүлсэн нь</a></h1>
+	<ul class="meta">
+		<li class="date">October  9, 2010</li>
+		<li class="author">by <a href="/contact/">Munkhbaatar</a></li>
+		<li class="category">category: <a href="//"></a></li>
+		<li class="tags">tags: dvorak, vim, mongolian-keymap</li>
+		<li class="comments"><a href="/2010/10/dvorak-and-vim/#disqus_thread">loading ...</a></li>
+	</ul>
+
+	<div class="post-content"><h2>Асуудлууд</h2>
+
+<h3>Mongolian keymap</h3>
+
+<p><a href="http://itblog.gmb.mn/2010/09/dvorak.html">Дворак</a> байрлал дээр <a href="http://www.vim.org/">Vim</a> ашиглахтай холбогдож гарсан нэг асуудал бол
+Монгол гарын байрлал байлаа. Вим дээр би <a href="http://www.blogger.com/profile/18199402892485746330">Гацан ах</a>ын оруулсан
+<a href="http://natsag.blogspot.com/2007/03/blog-post_16.html">mongolian-keymap</a>-г ашиглах дуртай байдаг байлаа. Монгол хэл дээр багагүй
+хэмжээний текст шивэхээр болбол ВИМ дээр шивсэн нь хамаагүй давуу талтай байдаг
+байв. Тэгтэл QWERTY-дээр тохируулагдсан бүх keymap-ууд Dvorak байрлал руу шилжих
+үед буруу ажиллаад байв. QWERTY-г default байлгаад зөвхөн ВИМ-ийн keymap дээр
+"dvorak" гэж сонгоод ажилладаг юм бил үү ч гэж бодов. Гэхдээ энэ шал утгагүй
+санаа гэдэг нь хэнд ч илэрхий билээ. Ингээд бүүр Эмакс ашиглах талаар бодож
+үзэв. Тэгсэн боловч Дворак-тай холбоотой жижиг сажиг тохиргоог Эмакс дээр ч
+гэсэн хийдэг бололтой юм байна. Тэгэхлээр ВИМ-тэйгээ л учраа олсон нь дээр.</p>
+
+<h3>Алдарт "HJKL" товчлуурууд</h3>
+
+<p>VIM дээрх зүг чиг заадаг товчлуурууд маань энд тэндгүй тараад байршчихсан байв.
+"<a href="http://vim.wikia.com/wiki/Change_cursor_movement_keys_for_Dvorak_layout">Dvorak it</a>" гэж тохируулга олсон боловч "<a href="http://www.vim.org/scripts/script.php?script_id=1658">NERDTREE</a>"-тэй ажиллах үед
+дээшээ чиг заадаг товчлуур ("t") асуудал үүсгээд байв. Энэ ер нь биш боллоо гэж
+бодов. Ерөөсөө энд тэндгүй тарчихсан байгаа товчлууруудтай нь эвлэрэе. Дасчихвал
+болох байх гэж бодов. 2 өдөр зүтгэлээ болсонгүй. Дасахгүй юм байна. Гэнэтхэн
+гярхай зан гялсхийж дэмий бухимдаж суухаар өглөөний сэргэг ухаанд найдахыг илүүд
+үзэн компьютерээсээ холдов. Тиймээ өглөөний сэргэг ухаан бүхнийг хялбархан
+шийдэв <code>;)</code></p>
+
+<h2>Шийдсэн минь</h2>
+
+<ul>
+<li><p>Гацан ахын анх Vim-д оруулсан <a href="http://natsag.blogspot.com/2007/03/blog-post_16.html">keymap</a>-г жаахан өөрчлөөд
+<a href="https://github.com/gmunkhbaatarmn/vim-mongolian-dvorak">mongolian-dvorak</a> гэж шинэ keymap тохируулж аваад нэг асуудал шийдэгдэв.</p></li>
+<li><p>Дворак, ВИМ хоёрыг ашигладаг архагууд ер нь яаж тохируулсан байна гэж гүүглдэж
+үзээд "<a href="http://vim.wikia.com/wiki/Change_cursor_movement_keys_for_Dvorak_layout">Dvorak it</a>" тохиргоог архаг гарууд тохируулчихсан л байдаг юм байна.
+Ер нь тэдний зөв байх. Үүнтэй нь эвлэрчихье. Тиймээс бусад асуудлуудыг нь
+шийдэх хэрэгтэй.</p></li>
+<li><p>Тэгээд "NERDTREE"-гийн соорсонд нь өөрчлөлт оруулаад тэндээс нь алдаатай
+ажиллаад байгаа товчлуурынхаа хаягийг өөрчлөв (дараа нь бүр устгачихсан :D).
+"Яадаг юм". Том балаг тарьчихгүй бол хааяа ч гэсэн иймэрхүү аргаар шийдэхэд
+буруудах юмгүй гэж бодов. Туурвил хөгжүүлэлтийн бурхан тэнгэр гэж байдаг бол
+миний энэ болхи үйлдлийг өршөөтүгэй <code>;)</code></p></li>
+<li><p>Бас нэг ялихгүй асуудал байсан нь <kbd>Ctrl+w+зүгчиг</kbd> гэсэн байнга шахуу
+хэрэглэдэг товчны хослол байлаа. <kbd>w</kbd> товчлуур маань ашиглахад
+төдийлөн тохиромжгүй газар байрладаг болчихсон байв. Гоё шийдэл оллоо.
+<kbd>,+зүгчиг</kbd> гэж цонх хооронд шилждэг болгов. Сохорсон биш завшив гэдэг
+нь л боллоо гэж бодоод л байгаа <code>:)</code></p></li>
+</ul>
+
+</div>
+
+	<div id="disqus_thread"></div>
+	<script>
+		// disqus comments
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</article>
+</div>
+</div>
+		<div id="sidebar"><div class="box">
+	<ul>
+		<li><a href="/rss/"><i class="icon-rss-alt"></i> Subscribe <strong>Posts RSS</strong></a></li>
+		<li><a href="http://twitter.com/gmunkhbaatarmn"><i class="icon-twitter-bird"></i> Follow me on <strong>Twitter</strong></a></li>
+		<li><a href="http://github.com/gmunkhbaatarmn"><i class="icon-github-text"> </i> Fork me on <strong>Github</strong></a></li>
+		<li><a href="http://www.linkedin.com/in/gmunkhbaatarmn"><i class="icon-linkedin-rect"></i> Connect me on <strong>LinkedIn</strong></a></li>
+	</ul>
+</div>
+
+
+
+<div class="box">
+	<h3 class="dsq-widget-title">Сүүлийн сэтгэгдлүүд</h3>
+	<script type="text/javascript" src="http://itblog-gmb-mn.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=50"></script>
+</div>
+
+
+</div>
+		<div id="fixer"></div>
+	</div>
+
+	<div id="footer"><div class="container">
+			<footer>
+			<p>
+			&copy; Copyright 2012 <a href="/">gmunkhbaatarmn</a>
+			&middot;
+			Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+			</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

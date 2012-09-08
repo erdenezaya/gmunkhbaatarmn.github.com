@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Blogger custom domain problem ·  Хөгжүүлэгчийн тэмдэглэл</title>
+	<link href="/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="/css/master-icons.css" type="text/css" rel="stylesheet" media="screen">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+	<script>
+		if (window.location.hostname == 'localhost') {
+			var disqus_developer = 1;
+			var disqus_url = 'http://itblog.gmb.mn' + window.location.pathname;
+		}
+		var disqus_shortname = 'itblog-gmb-mn';
+
+		$(function() {
+			// disqus comment counts
+			(function() {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<header>
+		<h1><a href="/">Програмчны тэмдэглэл</a></h1>
+		</header>
+	</div>
+
+	<div id="container">
+		<div id="content"><div class="post">
+	<article>
+	<h1><a href="/2008/11/blogger-custom-domain-problem/">Blogger custom domain problem</a></h1>
+	<ul class="meta">
+		<li class="date">November 22, 2008</li>
+		<li class="author">by <a href="/contact/">Munkhbaatar</a></li>
+		<li class="category">category: <a href="//"></a></li>
+		<li class="tags">tags: blogger, custom domain</li>
+		<li class="comments"><a href="/2008/11/blogger-custom-domain-problem/#disqus_thread">loading ...</a></li>
+	</ul>
+
+	<div class="post-content"><p>Blogspot -ын блогийг өөрийн гэсэн домайн хаягтайгаа холбоход гардаг асуудлуудын
+талаар бяцхан зөвлөмж бичье гэж бодлоо. Учир нь би өөрөө энэ тал дээр жаахан
+асуудалтай учирж нэлээн будилсан тул хэн нэгэнд хэрэг болж магадгүй. Гэхдээ
+нарийн ширийн HOWTO бичихгүй.</p>
+
+<h2>Error: "Another blog is already hosted at this address</h2>
+
+<ol>
+<li><p>Юун түрүүнд google-apps үйлчилгээнд тухайн домайн нэрээрээ бүртгүүлнэ.</p></li>
+<li><p>Google-Apps-ынхаа dashboard-наас Service Settings -> Sites руу орно. "Web
+Address Mapping" гэсэн хэсэгт нь www.mydomain.com гэсэн хаяг нэмнэ. Хэрвээ
+энэ дээр бас алдаа зааж байвал Sites-ийнхаа үндсэн URL-г нь change хийгээд
+www.mydomain.com болгочихож болно. (Ингэхдээ хэрвээ та энэ домайн хаяг дээрээ
+google-sites үйлчилгээг авсан бол болгоомжтой хандана уу?)</p></li>
+<li><p>Google-Apps-ынхаа dashboard-наас Service Settings -> Sites руу орно. Тэндээс
+эргээд өмнө нэмсэн www.mydomain.com -ынхоо URL-г устгана.</p></li>
+</ol>
+
+
+<p>Ингэхлээр google-ын баазнаас www.mydomain.com гэсэн URL-ын мэдээлэлийг устгаж
+байгаа юм шиг байгаа юм. Одоо блоггерын тохиргооруугаа ороод үз.
+<em>Error: "Another blog is already hosted at this address"</em> гэсэн алдаа гарахгүй
+байх болно.</p>
+
+<p>За бас болоогүй дахиад нэг алдаа бас гарж магадгүй юм. Надад лав гарсан. Блогоо
+холбочихсон хэрнээ www.mydomain.com гээд орохлээр 404 алдаа өгж байж магад.</p>
+
+<h2>Error 404</h2>
+
+<p>Үүнийг яаж шийдэх вэ гээд баахан CNAME тохиргоо энэ тэрээ нягталж хараад зүгээр
+болох байх гээд хүлээгээд байсан чинь янзлах арга нь нэлээн амархан юм байна лээ
+<code>:)</code></p>
+
+<ol>
+<li><p>Блогийнхоо хаягийг буцаагаад myblogurl.blogspot.com болгох хэрэгтэй.</p></li>
+<li><p>Тэгээд одоо блогийнхоо хаягийг дахин www.mydomain.com болгох хэрэгтэй.
+Ингэнгүүт 404 алдаа өгөхөө болино.</p></li>
+</ol>
+
+</div>
+
+	<div id="disqus_thread"></div>
+	<script>
+		// disqus comments
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</article>
+</div>
+</div>
+		<div id="sidebar"><div class="box">
+	<ul>
+		<li><a href="/rss/"><i class="icon-rss-alt"></i> Subscribe <strong>Posts RSS</strong></a></li>
+		<li><a href="http://twitter.com/gmunkhbaatarmn"><i class="icon-twitter-bird"></i> Follow me on <strong>Twitter</strong></a></li>
+		<li><a href="http://github.com/gmunkhbaatarmn"><i class="icon-github-text"> </i> Fork me on <strong>Github</strong></a></li>
+		<li><a href="http://www.linkedin.com/in/gmunkhbaatarmn"><i class="icon-linkedin-rect"></i> Connect me on <strong>LinkedIn</strong></a></li>
+	</ul>
+</div>
+
+
+
+<div class="box">
+	<h3 class="dsq-widget-title">Сүүлийн сэтгэгдлүүд</h3>
+	<script type="text/javascript" src="http://itblog-gmb-mn.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=50"></script>
+</div>
+
+
+</div>
+		<div id="fixer"></div>
+	</div>
+
+	<div id="footer"><div class="container">
+			<footer>
+			<p>
+			&copy; Copyright 2012 <a href="/">gmunkhbaatarmn</a>
+			&middot;
+			Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+			</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

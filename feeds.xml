@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Хөгжүүлэгчийн тэмдэглэл</title>
+	<link href="http://itblog.gmb.mn/feeds.xml" rel="self"/>
+	<link href="http://itblog.gmb.mn/"/>
+  <updated>2012-09-08T16:11:52+08:00</updated>
+  <author>
+    <name>Munkhbaatar</name>
+    <email>gmunkhbaatarmn@gmail.com</email>
+  </author>
+
+  
+  <entry>
+    <title>Introducing problem solver</title>
+		<link href="/2011/01/introducing-problem-solver/"/>
+    <updated>2011-01-20T00:00:00+08:00</updated>
+    <content type="html">&lt;p&gt;Монгол хэл дээрх &lt;a href=&quot;http://en.wikipedia.org/wiki/Online_judge&quot;&gt;online-judge&lt;/a&gt; сайтуудад бодлого боддог, бодох сонирхолтой
+хэн бүхэнд хэрэг болж болох &lt;a href=&quot;http://code.gmb.mn/ps/&quot;&gt;нэг жижиг сайт&lt;/a&gt; хийснээ танилцуулж байна.&lt;/p&gt;
+
+&lt;p&gt;Уг сайтад би өөрийн бодож чадсан бодлогуудыг шийдэлтэй холбоотой түлхүүр үгсийн
+хамт оруулсан байгаа. Та түлхүүр үгсийг ашиглан тухайн аль нэг бодлогыг бодоход
+хэрэгцээтэй онолын мэдлэг, арга техникийг баримжаалж тэдгээрийг судалснаар
+бодлогыг хялбарханаар бодож болно. Эсвэл та өөрийн сонирхсон аль нэг төрлийн
+бодлогуудыг шүүж бодож хичээллэж болно. Жишээ нь: Динамик програмчлал (DP), Бүх
+боломжийг шалгах (Brute force), Тооны онол (Number theory) гэх мэт.&lt;/p&gt;
+
+&lt;p&gt;Мөн түлхүүр үгээс гадна бодлогыг та өөрийн зохиосон юм уу сонирхсон тэстийн
+өгөгдөлд ямар утга буцаахыг тэстэлж үзэж болно. Энэ утгаар нь уг сайтыг
+&quot;&lt;a href=&quot;http://code.gmb.mn/ps/&quot;&gt;problem solver&lt;/a&gt;&quot; гэж нэрлэсэн.&lt;/p&gt;
+
+&lt;p&gt;Бодлогын санг би цаг заваараа тогтмол нэмэгдүүлж байхыг чармайх болно. Мөн таны
+сонирхсон бодлого сайт дээр байхгүй боловч online-judge сайт дээрх profile дээр
+маань уг бодлогыг бодчихсон гэж байвал та энэ бичлэгт сэтгэгдэл үлдээх байдлаар
+тухайн бодлогыг сайтад нэмүүлэх хүсэлт гаргаж болно.&lt;/p&gt;
+
+&lt;p&gt;Мөн нэг зүйлийг нуулгүй хэлэхэд уг сайтыг &lt;a href=&quot;http://uvatoolkit.com/&quot;&gt;uvatoolkit&lt;/a&gt; хэмээх гадаад сайтыг
+дууриалган хийсэн болно.&lt;/p&gt;
+
+&lt;p&gt;Гадаадын online-judge сайтуудад зориулж хэрэглэгчдийн хийсэн буюу хөндлөнгийн
+&quot;3rd party&quot; сайтууд бодлогуудыг төрлөөр нь ангилж (&lt;a
+href=&quot;http://problemclassifier.appspot.com&quot;&gt;problemclassifier.appspot.com&lt;/a&gt;),
+суралцагчдад хүнд хөнгөнөөр нь эрэмбэлэх байдлаар &lt;a
+href=&quot;http://felix-halim.net/uva/hunting.php?id=56164&quot;&gt;замчилж&lt;/a&gt; тусалдаг гоё
+гоё сайтууд байдгийг дууриаж нутагшуулах оролдлого хийсэн маань энэ юм.&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;Мөн энэ дашрамд &lt;a href=&quot;http://coder.query.mn/&quot;&gt;coder.query.mn&lt;/a&gt;, &lt;a href=&quot;http://spoj.pl/CSMS/&quot;&gt;spoj.pl/CSMS&lt;/a&gt;, &lt;a href=&quot;http://spoj.pl/CHAMKA/&quot;&gt;spoj.pl/CHAMKA&lt;/a&gt;,
+&lt;a href=&quot;http://spoj.pl/RGB/&quot;&gt;spoj.pl/RGB&lt;/a&gt; зэрэг Монгол хэл дээрх алгоритмын бодлогын сайтуудыг бүтээж,
+ажиллуулж яваа хүмүүст талархаж явдагаа илэрхийлэе.&lt;/p&gt;
+
+&lt;p&gt;Сайттай холбоотой алдаа, санал хүсэлт, мөн хувь нэмрээ оруулах хүсэлтэй байвал
+дуртайяа хүлээн авах болно.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Dvorak гарын байрлалд Vim засварлагчийг нийцүүлсэн нь</title>
+		<link href="/2010/10/dvorak-and-vim/"/>
+    <updated>2010-10-09T00:00:00+08:00</updated>
+    <content type="html">&lt;h2&gt;Асуудлууд&lt;/h2&gt;
+
+&lt;h3&gt;Mongolian keymap&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://itblog.gmb.mn/2010/09/dvorak.html&quot;&gt;Дворак&lt;/a&gt; байрлал дээр &lt;a href=&quot;http://www.vim.org/&quot;&gt;Vim&lt;/a&gt; ашиглахтай холбогдож гарсан нэг асуудал бол
+Монгол гарын байрлал байлаа. Вим дээр би &lt;a href=&quot;http://www.blogger.com/profile/18199402892485746330&quot;&gt;Гацан ах&lt;/a&gt;ын оруулсан
+&lt;a href=&quot;http://natsag.blogspot.com/2007/03/blog-post_16.html&quot;&gt;mongolian-keymap&lt;/a&gt;-г ашиглах дуртай байдаг байлаа. Монгол хэл дээр багагүй
+хэмжээний текст шивэхээр болбол ВИМ дээр шивсэн нь хамаагүй давуу талтай байдаг
+байв. Тэгтэл QWERTY-дээр тохируулагдсан бүх keymap-ууд Dvorak байрлал руу шилжих
+үед буруу ажиллаад байв. QWERTY-г default байлгаад зөвхөн ВИМ-ийн keymap дээр
+&quot;dvorak&quot; гэж сонгоод ажилладаг юм бил үү ч гэж бодов. Гэхдээ энэ шал утгагүй
+санаа гэдэг нь хэнд ч илэрхий билээ. Ингээд бүүр Эмакс ашиглах талаар бодож
+үзэв. Тэгсэн боловч Дворак-тай холбоотой жижиг сажиг тохиргоог Эмакс дээр ч
+гэсэн хийдэг бололтой юм байна. Тэгэхлээр ВИМ-тэйгээ л учраа олсон нь дээр.&lt;/p&gt;
+
+&lt;h3&gt;Алдарт &quot;HJKL&quot; товчлуурууд&lt;/h3&gt;
+
+&lt;p&gt;VIM дээрх зүг чиг заадаг товчлуурууд маань энд тэндгүй тараад байршчихсан байв.
+&quot;&lt;a href=&quot;http://vim.wikia.com/wiki/Change_cursor_movement_keys_for_Dvorak_layout&quot;&gt;Dvorak it&lt;/a&gt;&quot; гэж тохируулга олсон боловч &quot;&lt;a href=&quot;http://www.vim.org/scripts/script.php?script_id=1658&quot;&gt;NERDTREE&lt;/a&gt;&quot;-тэй ажиллах үед
+дээшээ чиг заадаг товчлуур (&quot;t&quot;) асуудал үүсгээд байв. Энэ ер нь биш боллоо гэж
+бодов. Ерөөсөө энд тэндгүй тарчихсан байгаа товчлууруудтай нь эвлэрэе. Дасчихвал
+болох байх гэж бодов. 2 өдөр зүтгэлээ болсонгүй. Дасахгүй юм байна. Гэнэтхэн
+гярхай зан гялсхийж дэмий бухимдаж суухаар өглөөний сэргэг ухаанд найдахыг илүүд
+үзэн компьютерээсээ холдов. Тиймээ өглөөний сэргэг ухаан бүхнийг хялбархан
+шийдэв &lt;code&gt;;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2&gt;Шийдсэн минь&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Гацан ахын анх Vim-д оруулсан &lt;a href=&quot;http://natsag.blogspot.com/2007/03/blog-post_16.html&quot;&gt;keymap&lt;/a&gt;-г жаахан өөрчлөөд
+&lt;a href=&quot;https://github.com/gmunkhbaatarmn/vim-mongolian-dvorak&quot;&gt;mongolian-dvorak&lt;/a&gt; гэж шинэ keymap тохируулж аваад нэг асуудал шийдэгдэв.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Дворак, ВИМ хоёрыг ашигладаг архагууд ер нь яаж тохируулсан байна гэж гүүглдэж
+үзээд &quot;&lt;a href=&quot;http://vim.wikia.com/wiki/Change_cursor_movement_keys_for_Dvorak_layout&quot;&gt;Dvorak it&lt;/a&gt;&quot; тохиргоог архаг гарууд тохируулчихсан л байдаг юм байна.
+Ер нь тэдний зөв байх. Үүнтэй нь эвлэрчихье. Тиймээс бусад асуудлуудыг нь
+шийдэх хэрэгтэй.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Тэгээд &quot;NERDTREE&quot;-гийн соорсонд нь өөрчлөлт оруулаад тэндээс нь алдаатай
+ажиллаад байгаа товчлуурынхаа хаягийг өөрчлөв (дараа нь бүр устгачихсан :D).
+&quot;Яадаг юм&quot;. Том балаг тарьчихгүй бол хааяа ч гэсэн иймэрхүү аргаар шийдэхэд
+буруудах юмгүй гэж бодов. Туурвил хөгжүүлэлтийн бурхан тэнгэр гэж байдаг бол
+миний энэ болхи үйлдлийг өршөөтүгэй &lt;code&gt;;)&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Бас нэг ялихгүй асуудал байсан нь &lt;kbd&gt;Ctrl+w+зүгчиг&lt;/kbd&gt; гэсэн байнга шахуу
+хэрэглэдэг товчны хослол байлаа. &lt;kbd&gt;w&lt;/kbd&gt; товчлуур маань ашиглахад
+төдийлөн тохиромжгүй газар байрладаг болчихсон байв. Гоё шийдэл оллоо.
+&lt;kbd&gt;,+зүгчиг&lt;/kbd&gt; гэж цонх хооронд шилждэг болгов. Сохорсон биш завшив гэдэг
+нь л боллоо гэж бодоод л байгаа &lt;code&gt;:)&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Дворак гарын байрлал руу шилжсэн минь</title>
+		<link href="/2010/09/switch-to-dvorak/"/>
+    <updated>2010-09-21T00:00:00+08:00</updated>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/KB_United_States_Dvorak.svg/400px-KB_United_States_Dvorak.svg.png&quot; alt=&quot;The modern Dvorak Simplified Keyboard layout&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard&quot;&gt;Дворак&lt;/a&gt; гарын байрлалаар бичиж сурахаар шийдээд &lt;a href=&quot;http://www.blogger.com/profile/18199402892485746330&quot;&gt;Гацан ах&lt;/a&gt;аас &lt;a href=&quot;http://mongolian-it.blogspot.com/2010/06/blog-post_9711.html&quot;&gt;зөвлөгөө&lt;/a&gt;
+авч урамшсандаа шууд зориглоод &lt;a href=&quot;http://twitter.com/gmunkhbaatarmn/status/16458795980&quot;&gt;ажилдаа орж&lt;/a&gt; билээ.&lt;/p&gt;
+
+&lt;h2&gt;Бэлтгэл ажил&lt;/h2&gt;
+
+&lt;p&gt;Дворак байрлалаар балбадаг болохын өмнө &lt;a href=&quot;http://en.wikipedia.org/wiki/QWERTY&quot;&gt;QWERTY&lt;/a&gt; гарын гарын байрлалаар шивдэг
+хурдаа шалгаж тэмдэглэж авч хадгалъя гэж шийдэв. Гэхдээ энэ ажлыг нэг их нүсэр
+болгоод яахав гэж бодоод зүгээр гялс хайж олсон веб хуудсыг ашиглав.
+&lt;a href=&quot;http://www.typeonline.co.uk/typingspeed.php&quot;&gt;typingonline.co.uk&lt;/a&gt; хаяг дээрх хурд шалгагчаар 3 удаа өөрийнхөө Англиар шивэх
+хурдыг шалгаж тэмдэглэж авав.&lt;/p&gt;
+
+&lt;p&gt;Гурван удаагийн оролдлого маань &lt;strong&gt;50wpm&lt;/strong&gt; (word per minute), &lt;strong&gt;53wpm&lt;/strong&gt;,
+&lt;strong&gt;53wpm&lt;/strong&gt; гэсэн үзүүлэлт гарлаа. (2010-06-16-ны байдлаар) Барагцаа, тойм байхад
+л хангалттай байсан тул энэ мэдээлэлийг хангалттай гэж үзэв. Дараа нь Дворак
+байрлалаар бичиж энэ хурдтайгаа харьцуулна даа :)&lt;/p&gt;
+
+&lt;p&gt;(2010 оны 9-р сарын байдлаар Дворак гарын байрлалаар шивж хурдаа шалгаж үзэхэд
+&lt;strong&gt;50-55wpm&lt;/strong&gt; байв)&lt;/p&gt;
+
+&lt;p&gt;Мөн Дворак гарын байрлал руу шилжихээр бэлтгэж байхдаа мөн өөр &lt;a href=&quot;http://colemak.com/&quot;&gt;Colemak&lt;/a&gt;
+хэмээх гарын байрлал байдгийг мэдэж авав. Колемак нь Дворакийг бодвол сүүлд
+боловсруулагдсан гарын байрлал болоод ч тэр үү QWERTY-гээс шилжихэд харьцангуй
+хялбар, Дворакаас илүү давуу талтай гэсэн баримт, &lt;a href=&quot;http://colemak.com/Compare&quot;&gt;баталгаа&lt;/a&gt;тай тааралдав.
+Гэсэн ч Колемак нь хэтэрхий залуухан, одоогоор маш цөөхөн хүн хэрэглэж байгаа
+учраас бүх комьютер, үйлдлийн систем дээр хялбархан тохируулах боломжгүй юм
+байна лээ. Харин Дворак гарын байрлалын хувьд &lt;a href=&quot;http://en.wikipedia.org/wiki/American_National_Standards_Institute&quot;&gt;ANSI&lt;/a&gt; стандартад багтсан учир
+орчин үеийн бүх үйлдлийн системд дэмжлэг орсон, хялбархан тохируулагддаг учраас
+Колемак мэтийн харьцангуй &quot;шилдэг байж мэдэх&quot; гарын байрлал сонгосоноос Дворакыг
+сонгосон нь надад хангалттайгаас гадна найдвартай гэж үзэв.&lt;/p&gt;
+
+&lt;p&gt;Ингээд Дворак байрлалаар нүдэж сурахаар шийдлээ. Одоо юунаас эхлэх вэ?
+Windows-XP дээр лав тохируулж болж байна. Харин Үбүнтү дээр маань&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Classic Dvorak&lt;/li&gt;
+&lt;li&gt;Dvorak&lt;/li&gt;
+&lt;li&gt;Programmer Dvorak&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;гэсэн гурван сонголт байх юм. Би &quot;Dvorak&quot; байрлалыг сонгосон бөгөөд энэ нь өргөн
+тархсан &lt;a href=&quot;http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard&quot;&gt;Dvorak Simplified&lt;/a&gt; гэдэг байрлал юм байна. Мөн Windows-XP дээр зөвхөн
+энэ сонголт нь л байсан! &lt;strong&gt;Classic Dvorak&lt;/strong&gt; нь жинхэнэ Дворак үзэл санааг
+шингээсэн байрлал бөгөөд ялгагдах гол онцлог нь гар-хавтан дээрх тоонуудын
+байрлал нь дэс дарааллаараа биш хэрэглэгдэх давтамжаасаа хамааран эрэмбэлэгдэн
+байрласан байх юм.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/KB_DSKtypewriter.svg/400px-KB_DSKtypewriter.svg.png&quot; alt=&quot;The Dvorak Classic Keyboard layout&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Харин &lt;strong&gt;Programmer Dvorak&lt;/strong&gt; нь код бичих зориулалтын дагуу &lt;strong&gt;Classic Dvorak&lt;/strong&gt;-г
+жаахан өөрчлөн хөгжүүлсэн хувилбар юм билээ. Ямар ч гэсэн одоохондоо үүн рүү
+сарвайгаад дэмий гэж бодов.&lt;/p&gt;
+
+&lt;h2&gt;Суралцах үйл явц&lt;/h2&gt;
+
+&lt;p&gt;Гарын дасгал хийдэг програмуудаас харьцуулж байгаад &lt;a href=&quot;http://ktouch.sourceforge.net/&quot;&gt;ktouch&lt;/a&gt; гэдэг програм
+суулгаад &lt;strong&gt;Dvorak - Auto Generated&lt;/strong&gt; гэдэг хичээлийн дагуу 2 өдөр балбав. Ер
+ахиж өгсөнгүй. Нэг хоёр үсэгээ бүрэн эзэмшээд дараагийнх руугаа ордог байсан
+болохоор энэ удаад хэдхэн л үсэг ахив. Буруу замаар яваад байгаа юм байна гэж
+бодоод интернетээс жаал жуул юм уншив. Хэд хэдэн зөвлөгөө уншив. Шууд хүндэвтэр
+дасгал хийгээд эхэлчихсэн байж! Хайран 2 өдөр :)&lt;/p&gt;
+
+&lt;p&gt;Анхан шатныханд зориулсан &lt;a href=&quot;http://gigliwood.com/abcd/lessons/&quot;&gt;Dvorak-ABCD&lt;/a&gt; гэдэг хичээлийг үзэв. &lt;strong&gt;ktouch&lt;/strong&gt; дотор
+маань энэ хичээл байсан байна. 3 дахь өдрөө өглөөнөөс авхуулж нүдсээр байгаад
+бүх үсэгнүүдтэйгаа танилцаад авав.&lt;/p&gt;
+
+&lt;p&gt;Ер нь аминчлаад хэлэхэд гар үнэхээр их ядардаг юм билээ. Гацан ахын хэлсэн гараа
+байнга амрааж байх хэрэгтэй гэдэг зөвлөгөө ой той руу шууд л орж байв.
+Ерөнхийдөө бол би өглөө нэг хэсэг богино завсарлагатайгаар балбана, өдөр юм уу
+орой мөн богино завсарлагатайгаар нийтдээ өдөрт 2 удаа томоохон &lt;strong&gt;балбалт&lt;/strong&gt; хийж
+байлаа.&lt;/p&gt;
+
+&lt;p&gt;Бас хамгийн хэцүү зүйл нь өмнө нь 10 хуруугаа гар-хавтан дээр буруу байрлуулдаг
+байсанаа мэдэж түүнийгээ засах гэж их зүдэрсэн. Мөн хуучин QWERTY байрлалаар
+нүдэж дассан зуршил, рефлексээсээ хагацаж чадахгүй юм л болбол хуучин QWERTY
+байрлал шигээ санаад үсэгнүүдээ дарсаар байв.&lt;/p&gt;
+
+&lt;p&gt;Ингээд 3 дахь өдрөө &lt;strong&gt;Dvorak - ABCD&lt;/strong&gt; курсыг дуусгачихсан учир дараа өдрүүдэд нь
+&lt;strong&gt;Dvorak - Auto Generated&lt;/strong&gt; гэдэг хичээлийг дуусгав.&lt;/p&gt;
+
+&lt;p&gt;Дворакт гарших дасгал хийж байх үед компьютэрээ бараг ашиглахгүй байлаа. Ашиглах
+гэхээр л QWERTY гарын хослолууд ашиглах болчих гээд хэд хоног хулгана гээч
+заваан юмтай (хулгана ашиглах дургүй болсон талаар дараа дурдана аа :D) их
+зууралдсан даа.&lt;/p&gt;
+
+&lt;p&gt;За тэгээд хамгийн чухал зүйл болох гарын хослолууд (keyboard-shortcut)&lt;/p&gt;
+
+&lt;h1&gt;Гарын хослолууд&lt;/h1&gt;
+
+&lt;p&gt;Дөнгөж л гайгүй учрыг нь олоод гарших аядаж байсан &lt;a href=&quot;http://www.vim.org/&quot;&gt;Vim editor&lt;/a&gt; дээрх гарын
+хослолууд нь ашиглахын эцэсгүй утгагүй санагдаад эхлэв. Гонсойсон гэж жигтэйхэн.
+Уг нь анх Дворак руу шилжихээр бэлтгэж байх үедээ энэ бэрхшээлийн талаар судалж
+үзээд даваад гарч болохоор л даваа байна гэж бодсон билээ. Гэтэл яг цаг нь
+болсон чинь нэг л дасаж өгдөггүй. Би хэтэрхий яараад байгаа бололтой. Өглөө
+босоод оролдъё. Хурууны ачаалал хэтрээд стресс вибратор ажиллаад эхэлчихсэн
+бололтой.&lt;/p&gt;
+
+&lt;p&gt;Хамгийн чухал зүйл болох код бичихэд хэр асуудал гарч байгааг шалгаж үзэхээр
+шийдээд 1 өдөржин C хэл дээрх код &lt;strong&gt;хуулж&lt;/strong&gt; бичив. Уг нь код &lt;strong&gt;бичиж&lt;/strong&gt; нэг
+сумаар 2 туулай буудаж болох байсан боловч заримдаа нэг сумаар нэг л туулайгаа
+найдвартай онох тал дээр анхаарах нь дээр байдаг гэж
+бодоод зөвхөн &lt;strong&gt;хуулж&lt;/strong&gt; бичсэн билээ &lt;code&gt;:)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Хэд хэдэн удаа сайхан чатлав, сайхан ч гэж дээ латинаар галиглаж бичсэн болохоор
+мэссэнжэрт мөлхөж өглөө шүү дээ. Нэг &lt;strong&gt;сайхан&lt;/strong&gt; &quot;&lt;em&gt;sonin yu bna daa&lt;/em&gt;&quot; гэж бичээд
+л таг &lt;code&gt;:P&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ер нь эцэст нь хэлэхэд асуудал Дворак гарын байрлалд биш дассан зүйлээсээ тас
+зуурчихсанд л байсан юм билээ. Шинэ юманд дасах гэж зовох, зовж чармайж
+өөрийнхөө ягштал хуучирч байсан зуршлаа нэг гөвөөд авах сайхан л юм. Энд тэнд
+хүмүүсийн бичсэн эхний 14 хоног л ёстой хэцүү байсан гэдэг үнэний ортой л юм
+байна лээ.&lt;/p&gt;
+
+&lt;p&gt;QWERTY-тэй харьцуулахад гол үндсэн зориулалт нь өөр болохоор ч тэр үү хэд хэдэн
+зүйл анзаарав.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;QWERTY дээр код бичих үед олон тохиолдолд баруун гар зүгчиг, home-delete юм уу
+хулгана хавьцаа байдаг учраас нэг гараар ихэнх хослолуудыг дарчихдаг байсан юм
+байна. Тухайлбал Ctrl+C,V,Z.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Харин Дворак дээр аль болох бүх зүйл дээр хоёр гар зэрэг оролцдог учраас зарим
+нэг гараар дарчихдаг байсан гарын хослолуудыг хоёр гараар дарах гэхээр эхэндээ
+дасахгүй байдаг байсан боловч удалгүй тэрэндээ дасчихсан нь бүүр ч аятай
+таатай сэтгэгдэл төрдөг болов. Тухайлбал QWERTY дээр би ВИМ ашиглахдаа ESC
+товчлуур холдоод байдаг учраас Ctrl+C товчны хослолыг ашиглах гээд ер дасаж
+өгөхгүй байсан бол Дворак дээр Ctrl+C товчны хослолыг дарахад маш хялбар
+байдгаас ВИМ дээр ESC товчлуур руу бараг сарвайхаа болисон шүү.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Дварокт ид шамдаад гарын хослолуудыг яаж шийдэх вэ гэж бодож байхдаа ихэнх
+програмуудын shortcut-ууд QWERTY-д зориулагдсан ЭРГОНОМИК-той байдаг байх гэж
+бодож өөрийнхөө гонсойж байгаад зөвтгөж байсан удаа байсан. Тэгтэл тэр нь тийм
+биш болж таарсан.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Холбоотой материалууд&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://mongolian-it.blogspot.com/2010/06/blog-post_9711.html&quot;&gt;Гар тулаан&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.wikihow.com/Switch-to-a-Dvorak-Keyboard-Layout&quot;&gt;How to switch to a Dvorak keyboard layout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Blogger custom domain problem</title>
+		<link href="/2008/11/blogger-custom-domain-problem/"/>
+    <updated>2008-11-22T00:00:00+08:00</updated>
+    <content type="html">&lt;p&gt;Blogspot -ын блогийг өөрийн гэсэн домайн хаягтайгаа холбоход гардаг асуудлуудын
+талаар бяцхан зөвлөмж бичье гэж бодлоо. Учир нь би өөрөө энэ тал дээр жаахан
+асуудалтай учирж нэлээн будилсан тул хэн нэгэнд хэрэг болж магадгүй. Гэхдээ
+нарийн ширийн HOWTO бичихгүй.&lt;/p&gt;
+
+&lt;h2&gt;Error: &quot;Another blog is already hosted at this address&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Юун түрүүнд google-apps үйлчилгээнд тухайн домайн нэрээрээ бүртгүүлнэ.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Google-Apps-ынхаа dashboard-наас Service Settings -&gt; Sites руу орно. &quot;Web
+Address Mapping&quot; гэсэн хэсэгт нь www.mydomain.com гэсэн хаяг нэмнэ. Хэрвээ
+энэ дээр бас алдаа зааж байвал Sites-ийнхаа үндсэн URL-г нь change хийгээд
+www.mydomain.com болгочихож болно. (Ингэхдээ хэрвээ та энэ домайн хаяг дээрээ
+google-sites үйлчилгээг авсан бол болгоомжтой хандана уу?)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Google-Apps-ынхаа dashboard-наас Service Settings -&gt; Sites руу орно. Тэндээс
+эргээд өмнө нэмсэн www.mydomain.com -ынхоо URL-г устгана.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Ингэхлээр google-ын баазнаас www.mydomain.com гэсэн URL-ын мэдээлэлийг устгаж
+байгаа юм шиг байгаа юм. Одоо блоггерын тохиргооруугаа ороод үз.
+&lt;em&gt;Error: &quot;Another blog is already hosted at this address&quot;&lt;/em&gt; гэсэн алдаа гарахгүй
+байх болно.&lt;/p&gt;
+
+&lt;p&gt;За бас болоогүй дахиад нэг алдаа бас гарж магадгүй юм. Надад лав гарсан. Блогоо
+холбочихсон хэрнээ www.mydomain.com гээд орохлээр 404 алдаа өгж байж магад.&lt;/p&gt;
+
+&lt;h2&gt;Error 404&lt;/h2&gt;
+
+&lt;p&gt;Үүнийг яаж шийдэх вэ гээд баахан CNAME тохиргоо энэ тэрээ нягталж хараад зүгээр
+болох байх гээд хүлээгээд байсан чинь янзлах арга нь нэлээн амархан юм байна лээ
+&lt;code&gt;:)&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Блогийнхоо хаягийг буцаагаад myblogurl.blogspot.com болгох хэрэгтэй.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Тэгээд одоо блогийнхоо хаягийг дахин www.mydomain.com болгох хэрэгтэй.
+Ингэнгүүт 404 алдаа өгөхөө болино.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+  </entry>
+  
+  <entry>
+    <title>Ubuntu дээр GMobile-н интэрнэтэд холбогдох</title>
+		<link href="/2008/07/ubuntu-gmobile-connection/"/>
+    <updated>2008-07-19T00:00:00+08:00</updated>
+    <content type="html">&lt;p&gt;GMobile-н интэрнэт хэрэглэдэг юм л даа. Windows дээр бол бараг л асуудалгүй
+нэт-д холбогдчихоод байгаа юм. Харин Ubuntu болон linux дээр тохируулж чадахгүй
+байгаа хүмүүс бас байж магадгүй гээд оруулчихлаа. GMobile-ийн acces-box нь
+dial-up, wireless, modem, usb-modem энэ тэрийн аль нь юм бүү мэд. Аль алинаар нь
+оролдоод болохгүй байсан юм.&lt;/p&gt;
+
+&lt;p&gt;Ubuntu дээр интэрнэтэд холбогдох гээд чадахгүй болохоор нь санаа алдаад л эргээд
+Windows-оороо нэлээн удаан явлаа. Тэгээд нэг өдөр зориг ороод яадаг ч байсан
+өнөөдөр заавал УБУНТУгаасаа интэрнэтэд холбогдоно гээд үзэж нэлээн ноцолдсондоо.
+Өглөөнөөс аваад интэрнэт ухаж ухаж үдэш болохын алдад нэг юм болов оо хө. Бөөн
+баяр. Тэгээд л эргэлт буцалтгүй linux-чин болж байгаа юм даа. Нэг буянтай
+пакистан нөхөр яаж холбогдсоноо бичсэн байсныг нь Монголчлох товчлохын голоор
+хүргэе.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ lsusb
+========================================
+Bus 005 Device 001: ID 0000:0000
+Bus 003 Device 001: ID 0000:0000
+Bus 004 Device 001: ID 0000:0000
+Bus 002 Device 004: ID 05c6:3197 Qualcomm, Inc. CDMA Wireless Modem/Phone
+Bus 002 Device 001: ID 0000:0000
+Bus 002 Device 001: ID 0000:0000
+Bus 001 Device 001: ID 0000:0000
+========================================
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Нэг иймэрхүү юм гарч ирнэ. Өөр ямар нэгэн юм USB-гээр холбосон бол өөр зүйл гарч
+ирнэ. Тэр нь гэхдээ хамаагүй.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo modprobe usbserial vendor=0x05c6 product=0x3197
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Энд арын тэр үсэг тоонууд &quot;Bus 002 Device 004: ID 05c6:3197 Qualcomm, Inc. CDMA
+Wireless Modem/Phone&quot; байгаатай адилхан байх ёстой. Компьютэрээсээ хамаараад өөр
+өөр байна.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ dmesg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Энэ хэсэг байхгүй байсан ч болох юм шиг байна лээ. Гэхдээ юмыг яаж мэдэх бичиж
+уншуулаад модемтойгоо холбогдсон эсэхээ шалгачих.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo apt-get install wvdial
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Энэ нь wdvial гэсэн програмыг суулгаж байгаа гэсэн үг нь ойлгомжтой. Энэ
+коммандыг ажиллуулангуут sudo password гэж асууна. Энэ нь super user-ын буюу
+root-ын нууц үгийг асууж байгаа юм.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo wvdialconf /etc/wvdial.conf
+========================================
+Scanning your serial ports for a modem.
+
+Modem Port Scan&amp;amp;lt;*1&amp;amp;gt;: S0 S1 S2 S3
+WvModem&amp;amp;lt;*1&amp;amp;gt;: Cannot get information for serial port.
+========================================
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Гэсэн эхлэлтэй бичигнүүд байх ба сүүлчээсээ өмнөх мөрөнд:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;========================================
+Modem configuration written to /etc/wvdial.conf.
+========================================
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;гэж байвал комманд амжилттай биелэгдсэн гэсэн үг.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo gedit /etc/wvdial.conf
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Текст засварлагчаар засвар хийнэ гэсэн үг.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;========================================
+[Dialer Defaults]
+Init1 = ATZ
+Init2 = ATQ0 V1 E1 S0=0 &amp;amp;amp;amp;C1 &amp;amp;amp;amp;D2 +FCLASS=0
+Stupid Mode = yes
+ISDN = 0
+Modem Type = USB Modem
+New PPPD = yes
+Phone = #777
+Modem = цаанаасаа тохируулагдчихсан байна. өөрчлөх хэрэггүй.
+Username = таны хэрэглэгчийн нэр
+Password = таны нууц үг
+Baud = 460800
+========================================
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Stupid Mode = yes&lt;/code&gt; гэсэн мөр зарим тохиолдолд байхгүй байж магадгүй. Минийх
+дээр лав байгаагүй. Үүнийг copy-paste хийгээд нэмчихээрэй.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ sudo wvdial
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Энэ коммандаар интэрнэтэд холбогдож байх болно. Terminal дээр&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;========================================
+WvDial&amp;lt;*1&amp;gt;: WvDial: Internet dialer version 1.56
+WvModem&amp;lt;*1&amp;gt;: Cannot get information for serial port.
+WvDial&amp;lt;*1&amp;gt;: Initializing modem.
+WvDial&amp;lt;*1&amp;gt;: Sending: ATZ
+WvDial Modem&amp;lt;*1&amp;gt;: ATZ
+WvDial Modem&amp;lt;*1&amp;gt;: OK
+WvDial&amp;lt;*1&amp;gt;: Sending: ATQ0 V1 E1 S0=0 &amp;amp;amp;C1 &amp;amp;amp;CD2 +FCLASS=0
+WvDial Modem&amp;lt;*1&amp;gt;: ATQ0 V1 E1 S0=0 &amp;amp;amp;CC1 &amp;amp;amp;CD2 +FCLASS=0
+WvDial Modem&amp;lt;*1&amp;gt;: OK
+WvDial&amp;lt;*1&amp;gt;: Modem initialized.
+WvDial&amp;lt;*1&amp;gt;: Sending: ATDT#777
+WvDial&amp;lt;*1&amp;gt;: Waiting for carrier.
+WvDial Modem&amp;lt;*1&amp;gt;: ATDT#777
+WvDial Modem&amp;lt;*1&amp;gt;: CONNECT
+WvDial&amp;lt;*1&amp;gt;: Carrier detected. Starting PPP immediately.
+WvDial&amp;lt;notice&amp;gt;: Starting pppd at Sun Feb 10 22:18:34 2008
+WvDial&amp;lt;notice&amp;gt;: Pid of pppd: 7410
+WvDial&amp;lt;*1&amp;gt;: Using interface ppp0
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+WvDial&amp;lt;*1&amp;gt;: local IP address **.**.**.**
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+WvDial&amp;lt;*1&amp;gt;: remote IP address **.**.**.**
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+WvDial&amp;lt;*1&amp;gt;: primary DNS address ***.***.***.***
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+WvDial&amp;lt;*1&amp;gt;: secondary DNS address ***.***.***.***
+WvDial&amp;lt;*1&amp;gt;: pppd: P?[06][08]??[06][08]
+========================================
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;гэсэн бичигнүүд гарч ирж байвал okay гэсэн үг. Ip болоод сүүийн хэдэн мөрөн дэхь
+текстүүд зөрж болно. Ингээд интэрнэтэд холбогдчихсон гэсэн үг. Энэ терминал-аа
+хаавал интэрнэт салгагдана гэсэн үг.&lt;/p&gt;
+
+&lt;p&gt;Дараа интернэтэд холбогдохдоо &lt;code&gt;$ sudo wvdial&lt;/code&gt; гэсэн хамгийн сүүлийн коммандыг тэрминал дээр бичихэд л болно.&lt;/p&gt;
+</content>
+  </entry>
+  
+</feed>

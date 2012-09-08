@@ -1,2 +1,0 @@
-gmunkhbaatarmn.github.com
-=========================
