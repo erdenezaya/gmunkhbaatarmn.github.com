@@ -3,12 +3,121 @@
 	<title>Хөгжүүлэгчийн тэмдэглэл</title>
 	<link href="http://itblog.gmb.mn/feeds.xml" rel="self"/>
 	<link href="http://itblog.gmb.mn/"/>
-  <updated>2012-09-09T23:14:02+08:00</updated>
+  <updated>2012-09-10T15:15:45+08:00</updated>
   <author>
     <name>Munkhbaatar</name>
     <email>gmunkhbaatarmn@gmail.com</email>
   </author>
 
+  
+  <entry>
+    <title>Github хуудсыг блог болгон ашиглах нь</title>
+		<link href="/2012/09/github-pages-as-blog/"/>
+    <updated>2012-09-10T00:00:00+08:00</updated>
+    <content type="html">&lt;p&gt;Өмнө нь зочилж байсан уншигчид блог маань шинэчлэгдсэн байгааг анзаарсан
+байлгүй. Блог маань &lt;a href=&quot;https://blogger.com/&quot;&gt;blogger (blogspot)&lt;/a&gt; платформ дээр байрлаж байсан бол
+одооноос &lt;a href=&quot;https://pages.github.com/&quot;&gt;github хуудас&lt;/a&gt; дээр байрлах боллоо.&lt;/p&gt;
+
+&lt;h2&gt;Github хуудасны тухай&lt;/h2&gt;
+
+&lt;p&gt;Github хуудас нь энгийнээр хэлбэл статик веб хостингийн үйлчилгээ юм. &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;
+дээр бүртгэлтэй хэн бүхэн энэ үйлчилгээг ашиглаж болох ба, өөрийн ник нэр бүхий
+дэд домайн дээр эзэмших эрхтэй юм. Өөрөөр хэлбэл таны github хэрэглэгчийн нэр
+&quot;foo&quot; бол таны github хуудас &quot;foo.github.com&quot; хаяг дээрээс ажиллана гэсэн үг.&lt;/p&gt;
+
+&lt;p&gt;Github хуудастай болох маш амархан бөгөөд та github дээр &lt;code&gt;&amp;lt;username&amp;gt;.github.com&lt;/code&gt;
+гэсэн repo нээснээр github хуудастай болно. Мэдээж энэ repo доторх бүх файлууд
+&lt;code&gt;&amp;lt;username&amp;gt;.github.com&lt;/code&gt; хаягаар дуудагдах болно. Бас нэг зүйл дурдахад
+&lt;code&gt;&amp;lt;username&amp;gt;.github.com&lt;/code&gt; гэж хаяг дуудах нь &lt;code&gt;&amp;lt;username&amp;gt;.github.com/index.html&lt;/code&gt;
+гэж файлыг дуудахтай адилаар ажиллах тул та repo дотроо &lt;code&gt;index.html&lt;/code&gt; файл
+байлгах хэрэгтэй.&lt;/p&gt;
+
+&lt;h2&gt;Github хуудсанд хувийн домайн холбох&lt;/h2&gt;
+
+&lt;p&gt;Хэрвээ та таамаглаж амжсан бол таны зөв. Блог маань github хуудас дээр байрлаж
+байгаа хэрнээ &lt;a href=&quot;http://itblog.gmb.mn/&quot;&gt;itblog.gmb.mn&lt;/a&gt; хаягтай байна шүү дээ. Тэгэхлээр github
+хуудсандаа домайн холбож болдог байх нь.&lt;/p&gt;
+
+&lt;p&gt;Маш амархан. &lt;code&gt;&amp;lt;username&amp;gt;.github.com&lt;/code&gt; repo дотроо &lt;code&gt;CNAME&lt;/code&gt; нэртэй файл үүсгээд
+дотор нь домайн нэрээ бичнэ. Дараа нь домайн сэрвэр дээрээ жижигхэн тохиргоо
+оруулна. Дэд домайн бол CNAME бичилт, домайн бол A бичилт оруулна. Домайн
+бичилтийн IP хаягийг &lt;a href=&quot;https://help.github.com/articles/setting-up-a-custom-domain-with-pages&quot;&gt;github help&lt;/a&gt;-ээс лавлаж хараарай.&lt;/p&gt;
+
+&lt;p&gt;За тэгэхээр блог маань &lt;a href=&quot;https://github.com/gmunkhbaatarmn/gmunkhbaatarmn.github.com&quot;&gt;github.com/gmunkhbaatarmn/gmunkhbaatarmn.github.com&lt;/a&gt;
+хаяг дээр байрлаж байгаа гэсэн үг төдийгүй та бүх файлуудыг харах эрхтэй, git
+ашиглан clone, fork хийх, pull request явуулах эрхтэй гэсэн үг юм &lt;code&gt;:)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2&gt;Блог статик байж болох уу?&lt;/h2&gt;
+
+&lt;p&gt;За одоо ингээд статик хостингтой болчихдог юм байж, яаж үүнийг блог болгож
+ашиглах вэ? Блог статик байж болох уу?&lt;/p&gt;
+
+&lt;p&gt;Хэрвээ сайн анзаарах юм бол блог бол маш энгийн бүтэцтэй веб сайт юм. Блог
+гэдэгт нүүр хуудас буюу бичлэгүүдийн жагсаалт, бичлэг харуулдаг хуудас,
+сэтгэгдэл бичих хэсэг, бичлэгүүдийг ангилалаар шүүж харуулдаг бас нэг хуудас
+байхад хангалттай байдаг. Блогийн програмууд эдгээр хуудсуудыг динамик байдлаар
+боловсруулж харуулдаг. Гэвч эдгээр хуудсууд байнга шинэчлэгддэггүй, зөвхөн
+бичлэг оруулах үед л шинэчлэгддэг. Тийм бол эдгээр хуудсуудыг харах болгондоо
+боловсруулалгүй, нэг боловсруулж аваад кэйшлэх, хэзээ нэгэн цагт бичлэг оронгуут
+кэйшээ шинэчилж болмоор санагдаж байгаа биз? Тэгээд бүүр давраад сайтаа тэр
+чигээр нь кэйшлэчихвэл ямар уу? &lt;code&gt;:)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Яг ийм маягаар статик хуудсаа блог байдлаар ашиглаж болох нь ээ. Статик хуудсанд
+маань блогийн хамгийн сүүлийн хувилбар бүхий кэйш ажиллаж, зөвхөн бичлэг орох
+үед кэйш буюу блог маань шинэчлэгдэж байх нь байна.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Байз! Сэтгэгдэл оруулах үед яах вэ? Үүнийг бас кэйшлэх үү?&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;За юу л даа... Хмм... энэ удаад мэдээж жаахан булхайцах хэрэг гарна. Гадны
+сэтгэгдэл авдаг үйлчилгээнүүдээс embed код аваад ашиглаж болно &lt;code&gt;:D&lt;/code&gt; Энэ блог
+дээр жишээ нь &lt;a href=&quot;http://disqus.com/&quot;&gt;disqus&lt;/a&gt; холбосон байгаа.&lt;/p&gt;
+
+&lt;h2&gt;Статик блог үүсгэгчүүд&lt;/h2&gt;
+
+&lt;p&gt;Статик блог үүсгэгч төрөл бүрийн програмууд гарчээ. Би &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; (Ruby) vs
+&lt;a href=&quot;http://ringce.com/hyde&quot;&gt;Hyde&lt;/a&gt; (Python) гээд хоёр програмыг удаан харьцуулсан боловч эцэст нь нэрнээс
+нь болоод &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;-г сонгосон &lt;code&gt;:)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Та ямар ч програм сонгосон бай бүгд л эцэстээ статик веб үүсгэх тул санаа амар
+github хуудас дээрээ байрлуулж болох юм. Доор нэмэлт холбоосууд хэсэгт статик
+блог үүсгэгч сонгоход тань хэрэг болох линкүүдийг орууллаа.&lt;/p&gt;
+
+&lt;h2&gt;Яагаад заавал статик блог гэж?&lt;/h2&gt;
+
+&lt;p&gt;Төрөл бүрийн үнэгүй динамик блог програмууд байсаар байтал яагаад заавал блогоо
+статик болгож өөртөө ажил удах хэрэгтэй гэж?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Блогийн хуулбар тань компьютер дээр чинь байрлана, та интернетгүй үед ч гэсэн
+блог руугаа хандана, блогоосоо юм лавлаж харахад хялбар байна.&lt;/li&gt;
+&lt;li&gt;Блогийнхоо бичлэгийг хүссэн форматаараа бичих. (markdown, rst, textile ...)
+Markdown буюу түүнтэй ойролцоо форматаар бичигдсэн бичлэгүүдээсээ юм хайх,
+унших зэргийг &lt;code&gt;grep&lt;/code&gt;, &lt;code&gt;cat&lt;/code&gt; зэрэг коммандуудаар хялбархан зохицуулж болно.&lt;/li&gt;
+&lt;li&gt;Бичлэг оруулах, нийтлэх бүх ажлыг коммандын мөрөөс (command line) зохицуулж
+болно. Энэ бол үнэхээр таатай залхуурал &lt;code&gt;:)&lt;/code&gt; (vim, git)&lt;/li&gt;
+&lt;li&gt;Блогоос маань болж учирж буй сэрвэрийн ачааллыг багасгах &lt;code&gt;:P&lt;/code&gt; (Мэдээж энэ бол
+наргиа. Ийм их хандалт баргийн блогт ирэхгүй)&lt;/li&gt;
+&lt;li&gt;Зүгээр л geek зан гаргаж янз бүрийн юм турших. Статик блогтой байх cool ч юм
+бил үү &lt;code&gt;:)&lt;/code&gt; (Мэдээж энэ бол маш чухал шалтгаан)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Нэмэлт холбоосууд&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github хуудас&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.byambatsogt.com/2011/10/25/jekyll-github-page/&quot;&gt;Jekyll, Github хуудсын тухай&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.bmannconsulting.com/node-static-site-generators/&quot;&gt;Node static site generators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.quora.com/Whats-the-best-available-static-blog-website-generator-in-Python&quot;&gt;What is the best static blog/website generator in Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mickgardner.com/2011/04/27/An-Introduction-To-Static-Site-Generators.html&quot;&gt;An introduction to static site generators&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Strange_Case_of_Dr_Jekyll_and_Mr_Hyde&quot;&gt;Доктор Жекил ба мистер Хайд хоёрын хачирхалтай явдал&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
   
   <entry>
     <title>Introducing problem solver</title>

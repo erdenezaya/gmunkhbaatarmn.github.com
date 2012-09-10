@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Github хуудсыг блог болгон ашиглах нь ·  Хөгжүүлэгчийн тэмдэглэл</title>
+	<link href="/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="/css/master-icons.css" type="text/css" rel="stylesheet" media="screen">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+	<script>
+		if (window.location.hostname == 'localhost') {
+			var disqus_developer = 1;
+			var disqus_url = 'http://itblog.gmb.mn' + window.location.pathname;
+		}
+		var disqus_shortname = 'itblog-gmb-mn';
+
+		$(function() {
+			// disqus comment counts
+			(function() {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<header>
+		<h1><a href="/">Хөгжүүлэгчийн тэмдэглэл</a></h1>
+		</header>
+	</div>
+
+	<div id="container">
+		<div id="content"><div class="post">
+	<article>
+	<h1><a href="/2012/09/github-pages-as-blog/">Github хуудсыг блог болгон ашиглах нь</a></h1>
+	<ul class="meta">
+		<li class="date">September 10, 2012</li>
+		<li class="author">by <a href="http://twitter.com/gmunkhbaatarmn">@gmunkhbaatarmn</a></li>
+		<li class="category">in <strong>Misc</strong></li>
+		<li class="tags">tags: blog, github, jekyll, static site</li>
+		<li class="comments"><a href="/2012/09/github-pages-as-blog/#disqus_thread">loading ...</a></li>
+	</ul>
+
+	<div class="post-content"><p>Өмнө нь зочилж байсан уншигчид блог маань шинэчлэгдсэн байгааг анзаарсан
+байлгүй. Блог маань <a href="https://blogger.com/">blogger (blogspot)</a> платформ дээр байрлаж байсан бол
+одооноос <a href="https://pages.github.com/">github хуудас</a> дээр байрлах боллоо.</p>
+
+<h2>Github хуудасны тухай</h2>
+
+<p>Github хуудас нь энгийнээр хэлбэл статик веб хостингийн үйлчилгээ юм. <a href="https://github.com/">Github</a>
+дээр бүртгэлтэй хэн бүхэн энэ үйлчилгээг ашиглаж болох ба, өөрийн ник нэр бүхий
+дэд домайн дээр эзэмших эрхтэй юм. Өөрөөр хэлбэл таны github хэрэглэгчийн нэр
+"foo" бол таны github хуудас "foo.github.com" хаяг дээрээс ажиллана гэсэн үг.</p>
+
+<p>Github хуудастай болох маш амархан бөгөөд та github дээр <code>&lt;username&gt;.github.com</code>
+гэсэн repo нээснээр github хуудастай болно. Мэдээж энэ repo доторх бүх файлууд
+<code>&lt;username&gt;.github.com</code> хаягаар дуудагдах болно. Бас нэг зүйл дурдахад
+<code>&lt;username&gt;.github.com</code> гэж хаяг дуудах нь <code>&lt;username&gt;.github.com/index.html</code>
+гэж файлыг дуудахтай адилаар ажиллах тул та repo дотроо <code>index.html</code> файл
+байлгах хэрэгтэй.</p>
+
+<h2>Github хуудсанд хувийн домайн холбох</h2>
+
+<p>Хэрвээ та таамаглаж амжсан бол таны зөв. Блог маань github хуудас дээр байрлаж
+байгаа хэрнээ <a href="http://itblog.gmb.mn/">itblog.gmb.mn</a> хаягтай байна шүү дээ. Тэгэхлээр github
+хуудсандаа домайн холбож болдог байх нь.</p>
+
+<p>Маш амархан. <code>&lt;username&gt;.github.com</code> repo дотроо <code>CNAME</code> нэртэй файл үүсгээд
+дотор нь домайн нэрээ бичнэ. Дараа нь домайн сэрвэр дээрээ жижигхэн тохиргоо
+оруулна. Дэд домайн бол CNAME бичилт, домайн бол A бичилт оруулна. Домайн
+бичилтийн IP хаягийг <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">github help</a>-ээс лавлаж хараарай.</p>
+
+<p>За тэгэхээр блог маань <a href="https://github.com/gmunkhbaatarmn/gmunkhbaatarmn.github.com">github.com/gmunkhbaatarmn/gmunkhbaatarmn.github.com</a>
+хаяг дээр байрлаж байгаа гэсэн үг төдийгүй та бүх файлуудыг харах эрхтэй, git
+ашиглан clone, fork хийх, pull request явуулах эрхтэй гэсэн үг юм <code>:)</code></p>
+
+<h2>Блог статик байж болох уу?</h2>
+
+<p>За одоо ингээд статик хостингтой болчихдог юм байж, яаж үүнийг блог болгож
+ашиглах вэ? Блог статик байж болох уу?</p>
+
+<p>Хэрвээ сайн анзаарах юм бол блог бол маш энгийн бүтэцтэй веб сайт юм. Блог
+гэдэгт нүүр хуудас буюу бичлэгүүдийн жагсаалт, бичлэг харуулдаг хуудас,
+сэтгэгдэл бичих хэсэг, бичлэгүүдийг ангилалаар шүүж харуулдаг бас нэг хуудас
+байхад хангалттай байдаг. Блогийн програмууд эдгээр хуудсуудыг динамик байдлаар
+боловсруулж харуулдаг. Гэвч эдгээр хуудсууд байнга шинэчлэгддэггүй, зөвхөн
+бичлэг оруулах үед л шинэчлэгддэг. Тийм бол эдгээр хуудсуудыг харах болгондоо
+боловсруулалгүй, нэг боловсруулж аваад кэйшлэх, хэзээ нэгэн цагт бичлэг оронгуут
+кэйшээ шинэчилж болмоор санагдаж байгаа биз? Тэгээд бүүр давраад сайтаа тэр
+чигээр нь кэйшлэчихвэл ямар уу? <code>:)</code></p>
+
+<p>Яг ийм маягаар статик хуудсаа блог байдлаар ашиглаж болох нь ээ. Статик хуудсанд
+маань блогийн хамгийн сүүлийн хувилбар бүхий кэйш ажиллаж, зөвхөн бичлэг орох
+үед кэйш буюу блог маань шинэчлэгдэж байх нь байна.</p>
+
+<ul>
+<li>Байз! Сэтгэгдэл оруулах үед яах вэ? Үүнийг бас кэйшлэх үү?</li>
+</ul>
+
+
+<p>За юу л даа... Хмм... энэ удаад мэдээж жаахан булхайцах хэрэг гарна. Гадны
+сэтгэгдэл авдаг үйлчилгээнүүдээс embed код аваад ашиглаж болно <code>:D</code> Энэ блог
+дээр жишээ нь <a href="http://disqus.com/">disqus</a> холбосон байгаа.</p>
+
+<h2>Статик блог үүсгэгчүүд</h2>
+
+<p>Статик блог үүсгэгч төрөл бүрийн програмууд гарчээ. Би <a href="http://jekyllrb.com/">Jekyll</a> (Ruby) vs
+<a href="http://ringce.com/hyde">Hyde</a> (Python) гээд хоёр програмыг удаан харьцуулсан боловч эцэст нь нэрнээс
+нь болоод <a href="http://jekyllrb.com/">Jekyll</a>-г сонгосон <code>:)</code>.</p>
+
+<p>Та ямар ч програм сонгосон бай бүгд л эцэстээ статик веб үүсгэх тул санаа амар
+github хуудас дээрээ байрлуулж болох юм. Доор нэмэлт холбоосууд хэсэгт статик
+блог үүсгэгч сонгоход тань хэрэг болох линкүүдийг орууллаа.</p>
+
+<h2>Яагаад заавал статик блог гэж?</h2>
+
+<p>Төрөл бүрийн үнэгүй динамик блог програмууд байсаар байтал яагаад заавал блогоо
+статик болгож өөртөө ажил удах хэрэгтэй гэж?</p>
+
+<ul>
+<li>Блогийн хуулбар тань компьютер дээр чинь байрлана, та интернетгүй үед ч гэсэн
+блог руугаа хандана, блогоосоо юм лавлаж харахад хялбар байна.</li>
+<li>Блогийнхоо бичлэгийг хүссэн форматаараа бичих. (markdown, rst, textile ...)
+Markdown буюу түүнтэй ойролцоо форматаар бичигдсэн бичлэгүүдээсээ юм хайх,
+унших зэргийг <code>grep</code>, <code>cat</code> зэрэг коммандуудаар хялбархан зохицуулж болно.</li>
+<li>Бичлэг оруулах, нийтлэх бүх ажлыг коммандын мөрөөс (command line) зохицуулж
+болно. Энэ бол үнэхээр таатай залхуурал <code>:)</code> (vim, git)</li>
+<li>Блогоос маань болж учирж буй сэрвэрийн ачааллыг багасгах <code>:P</code> (Мэдээж энэ бол
+наргиа. Ийм их хандалт баргийн блогт ирэхгүй)</li>
+<li>Зүгээр л geek зан гаргаж янз бүрийн юм турших. Статик блогтой байх cool ч юм
+бил үү <code>:)</code> (Мэдээж энэ бол маш чухал шалтгаан)</li>
+</ul>
+
+
+<h2>Нэмэлт холбоосууд</h2>
+
+<ul>
+<li><a href="https://pages.github.com/">Github хуудас</a></li>
+<li><a href="http://www.byambatsogt.com/2011/10/25/jekyll-github-page/">Jekyll, Github хуудсын тухай</a></li>
+<li><a href="http://blog.bmannconsulting.com/node-static-site-generators/">Node static site generators</a></li>
+<li><a href="http://www.quora.com/Whats-the-best-available-static-blog-website-generator-in-Python">What is the best static blog/website generator in Python</a></li>
+<li><a href="http://mickgardner.com/2011/04/27/An-Introduction-To-Static-Site-Generators.html">An introduction to static site generators</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Strange_Case_of_Dr_Jekyll_and_Mr_Hyde">Доктор Жекил ба мистер Хайд хоёрын хачирхалтай явдал</a></li>
+</ul>
+
+</div>
+
+	<div id="disqus_thread"></div>
+	<script>
+		// disqus comments
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</article>
+</div>
+</div>
+		<div id="sidebar"><div class="box">
+	<ul>
+		<li><a href="http://feeds.feedburner.com/gmunkhbaatarmn"><i class="icon-rss-alt"></i> Subscribe <strong>Posts RSS</strong></a></li>
+		<li><a href="http://twitter.com/gmunkhbaatarmn"><i class="icon-twitter-bird"></i> Follow me on <strong>Twitter</strong></a></li>
+		<li><a href="http://github.com/gmunkhbaatarmn"><i class="icon-github-text"> </i> Fork me on <strong>Github</strong></a></li>
+		<li><a href="http://www.linkedin.com/in/gmunkhbaatarmn"><i class="icon-linkedin-rect"></i> Connect me on <strong>LinkedIn</strong></a></li>
+	</ul>
+</div>
+
+
+
+<div class="box">
+	<h3 class="dsq-widget-title">Сүүлийн сэтгэгдлүүд</h3>
+	<script type="text/javascript" src="http://itblog-gmb-mn.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=50"></script>
+</div>
+
+
+</div>
+		<div id="fixer"></div>
+	</div>
+
+	<div id="footer"><div class="container">
+			<footer>
+			<p>
+			&copy; Copyright 2012 <a href="/">gmunkhbaatarmn</a>
+			&middot;
+			Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+			</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
