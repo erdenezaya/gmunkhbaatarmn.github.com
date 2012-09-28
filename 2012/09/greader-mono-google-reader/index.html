@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>gReader Mono - Better UI for Google Reader ·  Хөгжүүлэгчийн тэмдэглэл</title>
+	<link href="/css/styles.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="/css/master-icons.css" type="text/css" rel="stylesheet" media="screen">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+	<script>
+		if (window.location.hostname == 'localhost') {
+			var disqus_developer = 1;
+			var disqus_url = 'http://itblog.gmb.mn' + window.location.pathname;
+		}
+		var disqus_shortname = 'itblog-gmb-mn';
+
+		$(function() {
+			// disqus comment counts
+			(function() {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+		});
+
+		// google analytics
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-4030321-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+<body>
+	<div id="header">
+		<header>
+		<h1><a href="/">Хөгжүүлэгчийн тэмдэглэл</a></h1>
+		</header>
+	</div>
+
+	<div id="container">
+		<div id="content"><div class="post">
+	<article>
+	<h1><a href="/2012/09/greader-mono-google-reader/">gReader Mono - Better UI for Google Reader</a></h1>
+	<ul class="meta">
+		<li class="date">September 28, 2012</li>
+		<li class="author">by <a href="http://twitter.com/gmunkhbaatarmn">@gmunkhbaatarmn</a></li>
+		<li class="category">in <strong>Projects</strong></li>
+		<li class="tags">tags: projects, chrome, extension</li>
+		<li class="comments"><a href="/2012/09/greader-mono-google-reader/#disqus_thread">loading ...</a></li>
+	</ul>
+
+	<div class="post-content"><p><a href="http://plus.google.com/">Google-Plus</a> үйлчилгээ гарсаны дараа Google-н бүтээгдэхүүнүүд Google-Plus
+маягийн дизайнтай болж эхэлсэн билээ. Үр дүнд нь Google-н гоёмсог
+бүтээгдэхүүнүүд нэгэн хэвийн уйтгартай дизайнтай болж хэрэглэж дассан
+хэрэглэгчдийнхээ урмыг хугалж эхэлсэн.</p>
+
+<p>Үүний нэг жишээ бол <a href="http://www.google.com/reader/">Google-Reader</a>. Гэнэтхэн нэг өглөө л Google-Reader шинэ
+дизайнтай болчихсон, <em>"та үүнд дасан зохицно уу"</em> гээд байж байсан. Шинэ
+Google-Reader-т марзан хар-улаан өнгөний хослолоосоо эхлээд л таалагдахгүй юм
+зөндөө байсан, дасан зохицох гэж их үзсэн, яагаад ч болоогүй. Арга ядаад Янз
+янзын theme, user-script суулгаж үзсэн боловч тэр бүр санаанд нийцэхгүй байлаа.</p>
+
+<p>Ингээд нэг өдөр зориг шулуудан өөртөө таалагдахуйцаар Google-Reader-н дизайныг
+өөрчлөхөөр оролдов. 2 өдөр оролдоод санаснаараа өөрчлөн, chrome-extension
+байдлаар хийж дуусгалаа. Дуусгаад тун сэтгэл ханамжтай хэрэглэж эхлээд, нэг
+мэдсэн 5 сар өнгөрчээ. Найзынхаа зөвлөсний дагуу үүнийгээ бусад хүмүүс ч гэсэн
+хэрэглэж болохоор тараая гэж бодлоо.</p>
+
+<p><img src="/images/2012/google-reader.png" alt="Google Reader Default Interface" /></p>
+
+<h2>Сайжруулалтууд</h2>
+
+<ul>
+<li><p>Google-Reader-г төдийгүй Google-н ихэнх үйлчилгээг хүмүүс өдөр бүр ашигладаг
+учраас заавал Google-Reader-т байх албагүй хэсгүүдийг хассан.</p>
+
+<p>(системээс гарах, ямар нэрээр нэвтэрсэн тухай мэдээлэл, google-н бусад
+үйлчилгээнүүд рүү очих холбоосууд, google-plus-н widget)</p></li>
+<li><p>Google-Reader-г ашиглах ихэнх хугацааг юм уншиж өнгөрөөдөг. Тиймээс дэлгэц
+дээрх унших талбай хангалттай их байх хэрэгтэй. Ингээд ноцолдсоны эцэст,
+дэлгэцийн өндрийн бараг 30%-г унших талбай болгон хэмнэж чадсан.</p></li>
+<li><p>Удаан унших үед хүний нүдийг ядраахгүйн үүндээс олон өнгөнөөс татгалзаж
+ойролцоо зөөлхөн өнгөнүүд сонгож авсан. (бүдэг цэнхэр, саарал).</p></li>
+</ul>
+
+
+<p><img src="/images/2012/greader-mono.png" alt="Google Reader with gReader mono" /></p>
+
+<h2>Хэрэглэх</h2>
+
+<p>Одоохондоо зөвхөн Google-Chrome юм уу Chromium хөтчүүдийн нэмэлт байдлаар суух
+боломжтой байгаа. Та дараах хаягаар ороод chrome-webstore-оос татаж суулгана уу.</p>
+
+<p>Суулгах: <a href="https://chrome.google.com/webstore/detail/nfjcoclgoklklaedgklfnjghipnjicma">gReader Mono - Better UI for Google Reader</a></p>
+
+<h2>Хувь нэмрээ оруулах</h2>
+
+<p>Програмыг суулгаж ашиглаад санал хүсэлтээ бичиж байвал уг програмд оруулж байгаа
+том хувь нэмэр гэж ойлгож болно. Кодны хувьд мэдээж нээлттэй (open-source).</p>
+
+<p>Эх код: <a href="https://github.com/gmunkhbaatarmn/greader-mono">gReader-Mono</a></p>
+
+<p>Хэрэв та веб дизайны талын ур чадвартай бол дураараа өөрчлөөд хэрэглэж болно.
+Нэмж сайжруулаад өөрчлөлтүүдээ явуулж ч болно.</p>
+
+<h2>Холбоосууд</h2>
+
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/nfjcoclgoklklaedgklfnjghipnjicma">Extension on chrome webstore</a></li>
+<li><a href="https://github.com/gmunkhbaatarmn/greader-mono">Source code on github</a></li>
+<li><a href="http://www.google.com/reader/">Google-reader</a></li>
+</ul>
+
+</div>
+
+	<div id="disqus_thread"></div>
+	<script>
+		// disqus comments
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</article>
+</div>
+</div>
+		<div id="sidebar"><div class="box">
+	<ul>
+		<li><a href="http://feeds.feedburner.com/gmunkhbaatarmn"><i class="icon-rss-alt"></i> Subscribe <strong>Posts RSS</strong></a></li>
+		<li><a href="http://twitter.com/gmunkhbaatarmn"><i class="icon-twitter-bird"></i> Follow me on <strong>Twitter</strong></a></li>
+		<li><a href="http://github.com/gmunkhbaatarmn"><i class="icon-github-text"> </i> Fork me on <strong>Github</strong></a></li>
+		<li><a href="http://www.linkedin.com/in/gmunkhbaatarmn"><i class="icon-linkedin-rect"></i> Connect me on <strong>LinkedIn</strong></a></li>
+	</ul>
+</div>
+
+
+
+<div class="box">
+	<h3 class="dsq-widget-title">Сүүлийн сэтгэгдлүүд</h3>
+	<script type="text/javascript" src="http://itblog-gmb-mn.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=50"></script>
+</div>
+
+
+</div>
+		<div id="fixer"></div>
+	</div>
+
+	<div id="footer"><div class="container">
+			<footer>
+			<p>
+			&copy; Copyright 2012 <a href="/">gmunkhbaatarmn</a>
+			&middot;
+			Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+			</p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

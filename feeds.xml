@@ -3,12 +3,81 @@
 	<title>Хөгжүүлэгчийн тэмдэглэл</title>
 	<link href="http://itblog.gmb.mn/feeds.xml" rel="self"/>
 	<link href="http://itblog.gmb.mn/"/>
-  <updated>2012-09-10T23:21:09+08:00</updated>
+  <updated>2012-09-28T16:10:24+08:00</updated>
   <author>
     <name>Munkhbaatar</name>
     <email>gmunkhbaatarmn@gmail.com</email>
   </author>
 
+  
+  <entry>
+    <title>gReader Mono - Better UI for Google Reader</title>
+		<link href="/2012/09/greader-mono-google-reader/"/>
+    <updated>2012-09-28T00:00:00+08:00</updated>
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://plus.google.com/&quot;&gt;Google-Plus&lt;/a&gt; үйлчилгээ гарсаны дараа Google-н бүтээгдэхүүнүүд Google-Plus
+маягийн дизайнтай болж эхэлсэн билээ. Үр дүнд нь Google-н гоёмсог
+бүтээгдэхүүнүүд нэгэн хэвийн уйтгартай дизайнтай болж хэрэглэж дассан
+хэрэглэгчдийнхээ урмыг хугалж эхэлсэн.&lt;/p&gt;
+
+&lt;p&gt;Үүний нэг жишээ бол &lt;a href=&quot;http://www.google.com/reader/&quot;&gt;Google-Reader&lt;/a&gt;. Гэнэтхэн нэг өглөө л Google-Reader шинэ
+дизайнтай болчихсон, &lt;em&gt;&quot;та үүнд дасан зохицно уу&quot;&lt;/em&gt; гээд байж байсан. Шинэ
+Google-Reader-т марзан хар-улаан өнгөний хослолоосоо эхлээд л таалагдахгүй юм
+зөндөө байсан, дасан зохицох гэж их үзсэн, яагаад ч болоогүй. Арга ядаад Янз
+янзын theme, user-script суулгаж үзсэн боловч тэр бүр санаанд нийцэхгүй байлаа.&lt;/p&gt;
+
+&lt;p&gt;Ингээд нэг өдөр зориг шулуудан өөртөө таалагдахуйцаар Google-Reader-н дизайныг
+өөрчлөхөөр оролдов. 2 өдөр оролдоод санаснаараа өөрчлөн, chrome-extension
+байдлаар хийж дуусгалаа. Дуусгаад тун сэтгэл ханамжтай хэрэглэж эхлээд, нэг
+мэдсэн 5 сар өнгөрчээ. Найзынхаа зөвлөсний дагуу үүнийгээ бусад хүмүүс ч гэсэн
+хэрэглэж болохоор тараая гэж бодлоо.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/2012/google-reader.png&quot; alt=&quot;Google Reader Default Interface&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Сайжруулалтууд&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Google-Reader-г төдийгүй Google-н ихэнх үйлчилгээг хүмүүс өдөр бүр ашигладаг
+учраас заавал Google-Reader-т байх албагүй хэсгүүдийг хассан.&lt;/p&gt;
+
+&lt;p&gt;(системээс гарах, ямар нэрээр нэвтэрсэн тухай мэдээлэл, google-н бусад
+үйлчилгээнүүд рүү очих холбоосууд, google-plus-н widget)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Google-Reader-г ашиглах ихэнх хугацааг юм уншиж өнгөрөөдөг. Тиймээс дэлгэц
+дээрх унших талбай хангалттай их байх хэрэгтэй. Ингээд ноцолдсоны эцэст,
+дэлгэцийн өндрийн бараг 30%-г унших талбай болгон хэмнэж чадсан.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Удаан унших үед хүний нүдийг ядраахгүйн үүндээс олон өнгөнөөс татгалзаж
+ойролцоо зөөлхөн өнгөнүүд сонгож авсан. (бүдэг цэнхэр, саарал).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;&lt;img src=&quot;/images/2012/greader-mono.png&quot; alt=&quot;Google Reader with gReader mono&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Хэрэглэх&lt;/h2&gt;
+
+&lt;p&gt;Одоохондоо зөвхөн Google-Chrome юм уу Chromium хөтчүүдийн нэмэлт байдлаар суух
+боломжтой байгаа. Та дараах хаягаар ороод chrome-webstore-оос татаж суулгана уу.&lt;/p&gt;
+
+&lt;p&gt;Суулгах: &lt;a href=&quot;https://chrome.google.com/webstore/detail/nfjcoclgoklklaedgklfnjghipnjicma&quot;&gt;gReader Mono - Better UI for Google Reader&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Хувь нэмрээ оруулах&lt;/h2&gt;
+
+&lt;p&gt;Програмыг суулгаж ашиглаад санал хүсэлтээ бичиж байвал уг програмд оруулж байгаа
+том хувь нэмэр гэж ойлгож болно. Кодны хувьд мэдээж нээлттэй (open-source).&lt;/p&gt;
+
+&lt;p&gt;Эх код: &lt;a href=&quot;https://github.com/gmunkhbaatarmn/greader-mono&quot;&gt;gReader-Mono&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Хэрэв та веб дизайны талын ур чадвартай бол дураараа өөрчлөөд хэрэглэж болно.
+Нэмж сайжруулаад өөрчлөлтүүдээ явуулж ч болно.&lt;/p&gt;
+
+&lt;h2&gt;Холбоосууд&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/nfjcoclgoklklaedgklfnjghipnjicma&quot;&gt;Extension on chrome webstore&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/gmunkhbaatarmn/greader-mono&quot;&gt;Source code on github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.google.com/reader/&quot;&gt;Google-reader&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+  </entry>
   
   <entry>
     <title>Github хуудсыг блог болгон ашиглах нь</title>

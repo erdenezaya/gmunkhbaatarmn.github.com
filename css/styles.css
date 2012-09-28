@@ -1,7 +1,7 @@
 body{margin:0;background:#efefef url("../images/bg.png") repeat;font-family:Helvetica,Arial,sans-serif;font-size:13px}
 a:link,a:visited{color:#369;font-weight:bold;text-decoration:none;-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;-o-transition:all .15s ease-out}
 a:hover{color:#204060;border-bottom:1px solid #204060}
-#header{background:#474747 url("../images/header-bg.png");height:50px;box-shadow:0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);-moz-box-shadow:0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1)}
+#header{background:#474747 url("../images/header-bg.png");height:50px;-moz-box-shadow:0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);-webkit-box-shadow:0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);box-shadow:0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1)}
 #header header{width:940px;margin:0 auto;line-height:50px}
 #header h1{margin:0;font-size:19px}
 #header h1 a{color:#fff;font-weight:normal;-webkit-transition:all .12s ease-out;-moz-transition:all .12s ease-out;-o-transition:all .12s ease-out;text-shadow:0 3px 8px #2a2a2a;}
@@ -24,13 +24,14 @@ article h1 a:hover{border:0}
 article p{text-align:justify}
 article ul.meta{list-style:none;padding:0 0 5px 0;margin:5px 0 0 0}
 article ul.meta li{display:inline-block;color:#888;font-size:12px;margin-right:50px}
-article ul.meta li.date{margin-right:1ex}
+article ul.meta li.date{margin-right:0}
 article ul.meta li.category{margin-right:1ex}
 article ul.meta li.author{margin-right:1ex}
 article ul.meta li.tags{margin-right:1ex}
 article ul.meta li.comments{float:right;margin-right:0;text-transform:lowercase}
 article ul,ol{margin:0 0 18px 25px;padding:0;color:#555}
 article ul{list-style:circle}
+article img{margin:0 auto;border:1px solid #ccc;max-width:680px}
 #footer{width:960px;margin:20px auto 10px;height:50px;padding-top:10px;border-top:1px solid #ddd;border-top:1px dotted #dee2e7}
 #footer p{text-align:center}
 #footer a{color:#444;font-weight:bold;padding-bottom:2px;}
